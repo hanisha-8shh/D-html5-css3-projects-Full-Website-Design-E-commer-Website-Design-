@@ -1,0 +1,205 @@
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .home {
+        background-position: center;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .icons .fa-bars {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        width: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .header .navbar.active {
+        height: 33rem;
+    }
+
+    .header .navbar a {
+        margin: 2rem 0;
+        display: block;
+        color: var(--white);
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+    }
+
+    .header .logo img {
+        height: 8rem;
+    }
+
+    .home h1 {
+        text-align: center;
+    }
+
+    .header .navbar a.active::after {
+        left: -40%;
+        transform: translateX(0, 50%);
+        -webkit-transform: translateX(0, 50%);
+        -moz-transform: translateX(0, 50%);
+        -ms-transform: translateX(0, 50%);
+        -o-transform: translateX(0, 50%);
+        bottom: 40%;
+    }
+
+    .promo p,
+    .promo h1 {
+        width: 40rem;
+    }
+
+    .promo .btn {
+        text-align: center;
+    }
+
+    .promo {
+        background-position: left;
+        align-items: center;
+    }
+
+    .details {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .cart .cart-container table th {
+        position: relative;
+        top: 0rem;
+        right: 0;
+        width: 33%;
+        white-space: nowrap;
+        background: var(--main-color);
+        color: var(--white);
+        margin-bottom: 0.5rem;
+    }
+
+    .cart .cart-container table tr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+        padding-bottom: .5rem;
+        border-bottom: .1rem solid var(--light-color);
+    }
+
+    .cart .cart-container table tr:first-child,
+    .cart .cart-container table tr:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .cart .cart-container table tr td {
+        display: block;
+        position: relative;
+    }
+
+    .cart .cart-container .total-price {
+        right: 8%;
+    }
+
+    .about-us .container,
+    .contact .row {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .contact .row form {
+        flex-basis: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .featured .box-container .box img,
+    .latest .box-container .box img,
+    .products .box-container .box img,
+    .rolated-products .box-container .box img {
+        width: 30rem;
+        height: 28rem;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home p {
+        width: 35rem;
+    }
+
+    .promo h1 {
+        font-size: 3rem;
+    }
+
+    .promo p,
+    .promo h1 {
+        width: 30rem;
+    }
+
+    .details .images img {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .details .content h1 {
+        font-size: 2rem;
+    }
+
+    .rolated-products .rolated-products_head h3 {
+        font-size: 2rem;
+    }
+
+    .products .products-header .default {
+        font-size: 1.5rem;
+    }
+
+    .cart .cart-container table tr td input {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .cart .cart-container table tr td p {
+        font-size: 1.2rem;
+    }
+
+    .cart .cart-container table tr td .box img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .about-us .container img {
+        width: 35rem;
+        height: 25rem;
+    }
+}
